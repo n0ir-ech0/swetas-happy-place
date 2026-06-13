@@ -5,164 +5,85 @@
 'use strict';
 
 // =============================================
-// DATA — Smile Messages (flirty for girlfriend)
+// DATA — Smile Messages (simple, cute, Telugu refs)
 // =============================================
 const smileMessages = [
-  "Breaking News:\nSweta has once again been detected being dangerously beautiful.",
-  "Scientists confirm:\nSweta improves every room she enters — and every heart she touches.",
-  "Warning ⚠️\nExcessive Sweta-ness may cause uncontrollable feelings of love.",
-  "Congratulations!\nYou have successfully made your boyfriend smile just by existing.",
-  "Fun Fact:\nIce cream tastes better when Sweta eats it. And everything tastes better next to her.",
-  "Sweta has been promoted to:\nChief Executive Officer of Stealing Varun's Heart.",
-  "Alert:\nSweta's smile is classified as a national treasure — and Varun's personal weakness.",
-  "Official Report:\nEveryone who sees Sweta immediately becomes 47% happier. Varun becomes 1000% happier.",
-  "Hot Take:\nThe sun rises just to see what Sweta is wearing today.",
-  "Did you know?\nSweta was voted 'Most Likely to Make Varun Forget What He Was Saying' by the universe.",
-  "Plot Twist:\nThe butterflies in Varun's stomach were inside Sweta all along.",
-  "Exclusive:\nSweta smiled today and Varun's heart skipped approximately 3 beats.",
-  "Newsflash:\nBeing this beautiful is apparently legal. Sweta is proof.",
-  "Certified Fact:\nSweta's laugh could cure Varun's bad days. And it does. Every time.",
-  "Scientists baffled:\nSweta somehow gets more stunning every single day.",
-  "ANNOUNCEMENT:\nSweta has officially unlocked the 'Has Varun Completely Wrapped Around Her Finger' achievement.",
-  "Fun Fact:\nEverything looks better when Sweta is in it.",
-  "Weather Report:\nExpect sunshine, warmth, and 100% chance of Varun being in love wherever Sweta goes today.",
-  "Reminder:\nSweta once walked into a room and Varun forgot every word he knew.",
-  "Breaking:\nSweta is the reason love songs make sense.",
-  "Studies show:\nPeople smile more within 5 minutes of talking to Sweta. Varun smiles permanently.",
-  "Official Decree:\nSweta's good energy is a renewable resource. Her beauty is timeless.",
-  "The universe confirms:\nPutting Sweta anywhere immediately makes it better.",
-  "Daily Reminder:\nSweta is doing better than she thinks. And she's loved more than she knows.",
-  "Confidential Memo:\nThe stars arranged themselves differently just for Sweta. Varun noticed.",
-  "Report Card:\nSweta gets an A+ in being herself — which is the most wonderful subject.",
-  "Toast:\nTo Sweta — may your chai always be perfect and your WiFi always strong.",
-  "Fun Fact:\nSweta's presence alone has been shown to reduce Varun's stress by 100%.",
-  "Exclusive Interview:\nThe moon said Sweta is her favourite. Varun agrees wholeheartedly.",
-  "Sports Update:\nSweta wins gold in the category of making Varun feel like the luckiest guy alive.",
-  "Did you know?\nWhenever Sweta laughs, Varun falls a little more in love.",
-  "From the desk of the universe:\nYou, Sweta, are one of the better decisions I made.",
-  "Forecast:\n100% chance of charm and beauty wherever Sweta goes today.",
-  "Breaking:\nSweta spotted being incredible again. Fourth time this week. New record.",
-  "Public Announcement:\nSweta is the kind of person love stories get written about.",
-  "Fact Check: TRUE\nSweta is too precious for the bad days she sometimes has.",
-  "Hot News:\nScientists discovered that Sweta's smile contains actual stardust.",
-  "Certified:\nSweta's kindness has made more people feel better than she will ever know.",
-  "Alert Level: MAX\nDangerous levels of adorable detected. Source: Sweta.",
-  "Fun Fact:\nIf Sweta were a song, she would be Varun's favourite song. She already is.",
-  "OFFICIAL NOTICE:\nSweta is hereby declared a Permanent Vibe Improvement Zone.",
-  "Trending:\n#SwetaIsLiterallySoPerfect is breaking the internet again.",
-  "The jury has returned:\nVerdict — Sweta is the best, your honour. And Varun's too.",
-  "Weather Advisory:\nSweta's energy is expected to cause spontaneous joy and heart eyes.",
-  "Did you know?\nSweta has accidentally made Varun smile at his phone 47 times today.",
-  "Important Reminder:\nSweta being sad is not allowed. Universe's rules. Varun's rules. Sorry.",
-  "Late-Breaking Story:\nSweta is exactly who she's supposed to be — and Varun loves every part.",
-  "Update:\nThe ice cream you're about to eat is going to be amazing. Everything is when you're here.",
-  "Exclusive:\nSweta's happiness is a priority. Not a maybe. A priority. Varun's top priority.",
-  "Final Report:\nSweta is loved more than she will ever fully know. Especially by one particular guy.",
-  "BONUS ALERT:\nYou opened this website. That means Varun loves you more than words can say. Which is a lot."
+  "Nee smile chuste\nVarun ki world anni set ayipothundi. 🌸",
+  "Fun fact:\nSweta walk chestunte everyone becomes happy automatically. Science.",
+  "Ee moment lo\nTelangana lo okadu chala happy ga unnadu. Varun. 💗",
+  "Nee valla ice cream kuda\ninkaa tasty ga untundi. How??",
+  "Alert 🚨\nSweta is being adorable again.\nThis is not new but still very impressive.",
+  "Breaking news:\nNee laugh vinyagane bad mood pothundi.\nScience confirm chesindi.",
+  "Sweta spotted today:\nBeing absolutely wonderful.\nAs usual.",
+  "Today's forecast:\nSunshine, good vibes,\nand Sweta being too cute to handle. ☀️",
+  "Nee exist avvadam alone\nchala people ki happy feeling istundi.\nVarun ki extra. 💗",
+  "Certified:\nSweta's smile has stardust in it.\nResearch ongoing. Varun is the researcher.",
+  "Oka secret cheppala?\nNee happy ga untavani\nuniverseye wait chestundi. 🌙",
+  "Report card:\nBeing yourself — A+\nBeing wonderful — A+\nBeing Sweta — Priceless.",
+  "Ee world lo\nchala people unnaru.\nKani nee laanti Sweta okkatే unnaru. 💗",
+  "Chai hot ga undo?\nWiFi strong ga undo?\nSweta happy ga undaali. That's all.\nUniverse ki orders iyyabadindi. ✅",
+  "Sweta's energy today:\nChala good.\nVarun's energy today:\nSweta chusaka — chala better. 😄",
+  "Nee valla\northers ki automatically smile vastundi.\nNee ki telusa? 🌸",
+  "Ee universe lo\nnee existence oka gift.\nReturn policy ledu. Forever valid. 💗",
+  "You are not just okay Sweta.\nYou are really really good.\nTeliyada neeku? ✨",
+  "Chand stars anni unnay,\nkani moon matram earth ni choose chesadu.\nEarth nuvve Sweta. 🌙",
+  "Nee oka room lo ki vachinappudu\naa room better aipothundi.\nIthi facts. 💕",
+  "Weekly report:\nSweta being amazing — ✅ every day\nVarun noticing — ✅ every single time.",
+  "Fun fact:\nNee valla Varun ki\nbad days chala takkuva ga untayi. 💗",
+  "Universe memo:\nSweta deserves all good things.\nNo exceptions. Ever.",
+  "Ice cream chustunte\nnee face remind avutundi.\nBoth are perfect, both make everything better. 🍦",
+  "Ee message chадіante\nRemember: nuvvu chala chala valuable.\nValuable kanna kuda ekkuva. 💗",
+  "Sweta is the kind of person\npeople feel lucky to know.\nVarun knows this very well. 🌸",
+  "Neeku stress unte\nthoda tini,\nthoda rest chey,\nnee ki world wait chestundi. 💕",
+  "Today's vibe:\nSweta — immaculate.\nAs always. No notes. ✨",
+  "Stars choostu Sweta ki jealous avutunnay\nbecause she shines more. 💫",
+  "Smile chey Sweta.\nNee smile chuste\nVarun ki oka complete day set avutundi. 💗"
 ];
 
 // =============================================
-// DATA — Compliments (flirty + sweet)
+// DATA — Compliments (simple + cute + Telugu mix)
 // =============================================
 const compliments = [
-  "Your smile should be illegal for what it does to Varun's heart.",
-  "You make ordinary days feel like the best days of my life.",
-  "You're basically a limited edition. There's only one Sweta — and I got lucky.",
-  "The stars filed a complaint because you're stealing their sparkle.",
-  "Sweta is proof that good things genuinely exist.",
-  "You have the kind of laugh that makes Varun forget everything else.",
-  "You are a walking, talking reminder that the best things are real.",
-  "Being around you feels like a warm Sunday morning — my favourite feeling.",
-  "You light up every room without even trying. You light up my world all the time.",
-  "Your heart is one of the most beautiful things about you.",
-  "You make everything around you better just by existing. Including me.",
-  "You're the kind of person who makes someone feel chosen every single day.",
-  "Your presence is a gift I didn't deserve but I'm endlessly grateful for.",
-  "You are someone's favourite reason to smile — and that someone is Varun.",
-  "You have a rare kind of warmth that very few people carry.",
-  "Even on your bad days, you're still the most beautiful thing in my world.",
-  "You are worthy of every good thing coming your way.",
-  "The world is measurably better because you're in it.",
-  "You make me feel seen. That's incredibly rare and incredibly you.",
-  "You have the ability to turn difficult moments into bearable ones — just by being there.",
-  "Your energy is magnetic. I am one hundred percent a victim of it.",
-  "You're braver than you believe and more beautiful than you see.",
-  "The kindness you give out comes back to you — I'm living proof.",
-  "You are absolutely, undeniably enough. And more than enough for me.",
-  "You carry yourself with a grace you probably don't notice. I notice everything.",
-  "You're genuinely one of a kind — there's no one else like Sweta.",
-  "The good you put into the world matters more than you know.",
-  "Your voice matters. What you think matters. You matter — to everyone, and especially to me.",
-  "You have a depth to you that's rare and beautiful and endlessly interesting.",
-  "You make me feel comfortable just by being around. That's your superpower.",
-  "Your instincts are good. Trust them more. Especially the ones about us.",
-  "You've grown more than you give yourself credit for.",
-  "You're someone I feel unbelievably lucky to have in my corner.",
-  "You're allowed to take up space and shine brightly. Please never stop.",
-  "Even your quiet moments are full of meaning.",
-  "Your resilience is something to be in awe of.",
-  "You are more than the hard days make you feel.",
-  "You deserve the same kindness you give to others — and then some.",
-  "You're soft AND strong — that's the most beautiful combination.",
-  "Your style? Impeccable. Your vibe? Unmatched. My feelings for you? Indescribable.",
-  "You have that rare thing: genuine warmth that makes people feel safe.",
-  "You're a safe space for people — and the most beautiful one for me.",
-  "You inspire me every day without even knowing it.",
-  "Your laugh is genuinely contagious and genuinely my favourite sound.",
-  "You're the kind of girlfriend everyone wishes they had. I actually have you.",
-  "You find beauty in small things and that says everything about you.",
-  "Your good qualities run so much deeper than the surface.",
-  "You are exactly the kind of person this world needs more of.",
-  "You're someone worth knowing, Sweta. Truly worth loving.",
-  "You're blooming even when you don't feel like it.",
-  "You make everything you touch a little more beautiful. You made me better.",
-  "You're not just surviving — you're doing more than you think.",
-  "Your potential is vast and still unfolding and I can't wait to watch.",
-  "You are remarkable in ways you haven't discovered yet.",
-  "You deserve a whole book written about how wonderful you are.",
-  "Your authenticity is the best thing about you.",
-  "You are soft, strong, and spectacular.",
-  "Even the universe is rooting for you, Sweta.",
-  "You have a gift for making people feel at home — you are home to me.",
-  "Your dreams are valid. So valid. And I believe in all of them.",
-  "You're the main character and you don't even know it. I'm just happy to be in your story.",
-  "You make the world gentler just by being in it.",
-  "You're smarter than you think on the hard days.",
-  "Your heart is incredibly kind. Don't ever let anyone dull it.",
-  "You glow differently on the days you're yourself.",
-  "You were made for great things, Sweta. Watch.",
-  "You radiate something special that can't be faked and can't be forgotten.",
-  "You are exactly enough. Always have been. Always will be.",
-  "You carry a light inside you that doesn't go out — even on hard nights.",
-  "Your growth is real, even when it's invisible.",
-  "You are someone worth celebrating today and every day.",
-  "You bring out the best in people around you — especially in me.",
-  "You're endlessly interesting if people take the time to notice.",
-  "You handle things with a grace that's worth admiring.",
-  "You are spectacular when you let yourself be.",
-  "Your good days prove what you're capable of. Remember them on the hard ones.",
-  "You make difficult things look easier than they are.",
-  "There is magic in you, Sweta. Genuine, undeniable magic.",
-  "You're the kind of human that restores faith in everything.",
-  "You are appreciated more than you know.",
-  "Your flaws don't cancel your greatness — they're part of what makes you real.",
-  "You have a warmth that I want to be near, always.",
-  "You're doing hard things and that deserves recognition.",
-  "You have everything it takes to keep going. And I'll be right here.",
-  "You matter to more people than you realize — most of all to me.",
-  "You're a genuinely beautiful human being, inside and out.",
-  "Whoever gets your time and energy is very lucky. I know I am.",
-  "You make hope feel possible when you walk into a room.",
-  "You're creative, capable, and completely wonderful.",
-  "You're not behind. You're on your own timeline and it's perfect.",
-  "You are loved. Not for what you do — just for being you.",
-  "You deserve softness, kindness, and all good things. Including me, I hope.",
-  "You're more magnificent than any bad day has ever made you feel.",
-  "You are the reason someone out there smiled today — that someone is Varun.",
-  "You are a whole universe in one person, Sweta.",
-  "Today, and every day — you are more than enough.",
-  "You are adored. Deeply, completely adored. Just so you know.",
-  "You are Sweta. And that alone is extraordinary."
+"Nuvvu cute ga undadam hobby aa leka full-time profession aa? 😏💗",
+"Sweta online vachindi. Varun productivity offline aipoyindi. 📱💀",
+"Nee smile ki GST padali. Happiness tax collect chestundi. 😭💗",
+"Nee DP marchina prati sari nation wants to know. 😤💗",
+"Nee smile chuste brain screenshot teesukovali anipistundi. 📸💗",
+
+  "Nee smile chala powerful.\nIt fixes things without even trying. 💗",
+  "You are so easy to be around Sweta.\nChala rare quality that. 🌸",
+  "Nee kindness chala real ga untundi.\nFake ledu, forced ledu — just you. ✨",
+  "Nee valla people feel chestaru\nthat someone gets them.\nThat's a big deal. 💕",
+  "You make difficult days feel a little lighter.\nJust by being you. 🌸",
+  "Nee laugh world ki best sound.\nScientifically unproven but emotionally 100% true. 😄",
+  "Chala people around unnaru,\nkani nee laanti Sweta okkatē unnaru. 💗",
+  "Nee heart chala good Sweta.\nProtect it. But also know it is seen. 🌷",
+  "You notice small things about people.\nThat makes you very special. 💛",
+  "Nee presence alone\nroom ki different feel vastundi.\nIt's you. It's always been you. ✨",
+  "You are soft and strong at the same time.\nChala beautiful combination that. 💗",
+  "Nee valla people feel chestaru\nthat they matter.\nMeaning? Nuvvu chala matter avutaav. 🌸",
+  "You carry yourself with a grace\nneeku teliyadhu kani\northers ki chala obvious ga kanipisthundi. 💕",
+  "Nee style — top.\nNee vibe — unmatched.\nNee heart — best of all. 💗",
+  "Bad day lo kuda\nnuvvu best version of yourself nivu.\nNuvvu feel cheyakpoyina kuda. 🌷",
+  "Nee exist avatam\nuniverseకి chala good decision. Return cheyyaledu. ✨",
+  "You're not behind in life Sweta.\nNuvvu nee own time lo unnav.\nAdi perfect. 💗",
+  "Nee growth kanipiyakpoyina kuda real ga undi.\nVarun chustunnadu. 🌸",
+  "People feel safe around you.\nThats not small thing — that's everything. 💕",
+  "Nee thoughts matter.\nNee feelings matter.\nNuvvu matter avutaav. Always. 💗",
+  "You make ordinary things feel nice.\nLunch, a song, a random Tuesday.\nThat's your magic. ✨",
+  "Nee resilience chuste\nVarun ki chala respect ga untundi.\nYou handle things without even showing it. 💗",
+  "You deserve soft things Sweta.\nRest, kindness, ice cream, peace.\nAll of it. 🍦💕",
+  "Nee voice matter avutundi.\nMatlaadite vinali.\nNuvvu cheppedi important. 🌸",
+  "Nee inside beauty\nbahira kanna chala ekkuva.\nAdi chala rare. 💗",
+  "You find good things in people.\nThat says everything about you. ✨",
+  "Nuvvu try cheyakpoyina\northers ki happy ga feel avutundi.\nNee effect that. 💕",
+  "Sweta nee potential still unfolding.\nVarun front row seat lo chustunnadu. 💗",
+  "You are someone people feel lucky to know.\nRemember that on hard days. 🌸",
+  "Nee authenticity — best thing about you.\nOther version veyyaku please. 💗",
+  "You matter to more people than you know.\nEspecially one particular person. 💕",
+  "Nee bad days\nnee good days ni cancel cheyavu.\nNuvvu inka ekkuva. ✨",
+  "You are exactly enough.\nAlways have been.\nAlways will be. 💗",
+  "Sweta being Sweta\nis the most wonderful thing in Varun's world. 🌸"
 ];
 
 // =============================================
@@ -170,205 +91,243 @@ const compliments = [
 // =============================================
 const jokes = {
   joke: [
-    "Why did Sweta bring a ladder to the party?\nBecause she heard the drinks were on the house.",
-    "Sweta: I'm not like other people.\nVarun: I know. You're better. Much better.",
-    "Why did the calendar blush?\nBecause Sweta marked it as 'Best Day Ever' three times — and it was.",
-    "What do you call Sweta who's also amazing?\nJust Sweta. That covers everything.",
-    "Sweta walked into a library and asked for books about paranoia.\nLibrarian: They're right behind you.\nSweta: Perfect.",
-    "Why did the sun go to therapy?\nBecause it kept comparing itself to Sweta's smile and lost.",
-    "Sweta typed 'Who is the most beautiful person alive?' into Google.\nGoogle said: 'Did you mean yourself?'",
-    "Why can't Sweta play hide and seek?\nBecause Varun would never stop looking.",
-    "Sweta walked past a mirror and the mirror said 'omg, same.'\nVarun: Same.",
-    "The WiFi password changed to 'SwetaIsEverything' and Varun memorised it instantly.",
-    "Knock knock.\nWho's there?\nVarun's heart.\nVarun's heart who?\nVarun's heart, hopelessly in love with Sweta.",
-    "Why did the cookie cry?\nBecause Sweta ate all the ice cream first. Legendary move.",
-    "Sweta tried to write her flaws list.\nShe ran out of paper because she kept writing 'none'.",
-    "Doctor: I have good news and better news.\nSweta: What's the good news?\nDoctor: The better news is Varun is absolutely whipped for you. Medically verified.",
-    "Sweta's horoscope today: 'Varun is going to look at you like you hung the moon.'\nEvery horoscope. Every day. No exceptions.",
-    "Why did the moon apply for a job?\nBecause it wanted to be as impressive as Sweta.",
-    "Sweta opened a fortune cookie.\nIt said: 'Congratulations on having the best boyfriend.'\nSweta: Debatable.\nCookie: Nope.",
+    "Sweta mirror daggara vellindi.\nMirror: nenu kuda cute anukunna...\nKani nuvvu inka ekkuva. 😭",
+    "Google lo Sweta type chesindi:\n'World's cutest person'\nGoogle: Did you mean yourself? 💗",
+    "Varun: 2+2 em avutundi?\nSweta walked in.\nVarun forgot everything. 😄",
+    "Hide and seek Sweta tho aadadam ledu.\nVarun would never stop looking. Facts. 💗",
+    "Sweta walked into a room.\nRoom cleaned itself up nervously.\n'She's here, she's HERE.' 😂",
+    "Sweta wrote her flaws list.\nPage empty.\nPen works fine though. 📝",
+    "Sun ki therapy eppudu start chesindi?\nSweta tho compare cheyyadam start ayinappati nundi. ☀️😂",
+    "Knock knock.\nWho's there?\nVarun's feelings.\nVarun's feelings who?\n...It's a long list, Sweta. 💗",
+    "Sweta horoscope today:\n'Someone is watching you with full heart eyes.'\nEvery day same horoscope. Coincidence? No. 👀",
+    "Fortune cookie opened by Sweta.\nIt said: 'You are wonderful.'\nSweta: Wow really?\nCookie: We cannot lie. We are cookies. 🍪",
+    "Doctor: I have results.\nSweta: And?\nDoctor: You are dangerously adorable.\nMedically certified. 💊💗",
+    "Sweta typed 'biryani near me'.\nBiryani typed 'Sweta near me'.\nTrue story. 🍛😂",
+    "Why can't Sweta be sad?\nUniverse filed a complaint.\nNot allowed. Rules are rules. 📋",
+    "Sweta's wifi password:\n'SwetaIsTheBest'\nVarun memorised it in 0 seconds. 📶💗",
+    "BTS hearing that Sweta is their fan:\nThey feel honoured honestly. 💜",
+    "Sweta opened ice cream.\nIce cream: 'Finally. I was waiting for you.' 🍦💗",
   ],
   icecream: [
-    "EMERGENCY PROTOCOL ACTIVATED:\nProceed immediately to nearest ice cream source.\nVarun's treat.",
-    "Doctor's Orders:\nYou are legally required to eat ice cream at least once today.\nPrescription signed: Dr. Varun (of Love).",
-    "Scientists discover:\nIce cream consumed while thinking of someone you love makes it 200% better.\nSweta qualifies.",
-    "Breaking: Ice cream shortage reported.\nCause: Sweta keeps being too cute and the universe compensates automatically.",
-    "Ice Cream Flavour Recommendation for Today:\nWhatever you want. You deserve it. Varun will order for you.",
-    "The ice cream said:\n'I was waiting for you, Sweta.'\nVarun has been saying the same thing.",
-    "Official Notice:\nThe ice cream aisle has been renamed 'Sweta's section' effective immediately.",
-    "Fun Fact:\nIce cream tastes 47% better when shared with someone who loves you.\nVarun's always available.",
-    "Diagnosis: Low ice cream levels.\nPrescription: One scoop minimum. Varun's company mandatory.",
-    "The committee has reviewed your week.\nRecommendation: Extra scoop. With sprinkles. Varun's paying. Non-negotiable.",
+    "EMERGENCY:\nProceed to nearest ice cream immediately.\nThis is not a drill. 🚨🍦",
+    "Doctor's orders:\nEat ice cream today.\nPrescription valid all day.\nNo refills needed — just go. 🍦",
+    "Ice cream + Sweta =\nPerfect combination.\nScience agrees. Universe agrees. Varun agrees. 💗",
+    "Breaking news:\nSweta and ice cream spotted together.\nBoth looking amazing. As usual. 🍦✨",
+    "Flavour recommendation today:\nWhatever you want.\nYou earned it just by existing. 🍦💕",
+    "The ice cream said:\n'Main Sweta ko wait kar raha tha.'\nSame energy as Varun honestly. 🍦😂",
+    "Nee ice cream eating face\nworld ki best thing.\nVarun bets on this. 🍦💗",
+    "Ice cream calories today:\nZero.\nSweta eating it cancels them all out.\nScientists confirmed. 🍦✅",
+    "Fun fact:\nIce cream tastes 100% better\nwhen you eat it guilt free.\nEat it Sweta. Go. 🍦💗",
+    "Committee decision:\nExtra scoop today.\nWith sprinkles.\nNon-negotiable. 🍦🎉",
   ],
   confidence: [
-    "If confidence were money,\nSweta would own three countries and Varun's entire heart.",
-    "Reminder:\nYou are legally and cosmically required to be confident today.",
-    "The FBI called.\nThey want to know how Sweta keeps being this breathtaking.\nShe declined to comment.",
-    "Breaking News:\nSweta spotted being iconic again. Varun: 'Literally every day.'",
-    "Sweta walked into a room.\nThe room straightened up and tried to look nice.",
-    "Mirror: You look incredible.\nSweta: I know.\nMirror: She gets it.\nVarun: I've been saying this.",
-    "Sweta's confidence level today: ████████████ 100%\nVarun's love level today: ████████████ ∞",
-    "The vibe check results are in:\nSweta: Immaculate, as always.",
-    "Today's power level: Over 9000.\nSource: Sweta being Sweta.",
-    "You are the energy you've been looking for.\nAnd you've had it the whole time. Varun saw it first.",
-    "Style check: Passed.\nVibe check: Passed.\nHaving Varun's heart check: Eternally passed.",
+    "Sweta walked in.\nConfidence level: 100.\nVibe: immaculate.\nVarun: 🫠",
+    "Mirror: You look good.\nSweta: I know.\nMirror: She finally gets it! 💗✨",
+    "Nee vibe check:\n✅ Passed\n✅ Passed again\n✅ Will always pass\nNo further testing needed. 💗",
+    "Breaking:\nSweta spotted being iconic.\nVarun: 'Idi daily ga jarugutuundi.' 💗",
+    "Nee confidence today:\n████████████ 100%\nVarun's admiration:\n████████████ ∞ 💗",
+    "Style check: ✅\nVibe check: ✅\nBeing Sweta check: ✅ Eternally. 💗",
+    "Sweta power level today:\nOver 9000.\nSource: Just being herself. 💪✨",
+    "Nuvvu room lo ki vastunte\nroom feel chestundi — 'Oh, she's here. Standards raised.' 💗",
+    "Confidence tip:\nNee laanti Sweta okkatē world lo undi.\nAdi remember chesuko. Every day. 🌸",
+    "Varun's daily reminder:\nSweta is wonderful.\nSweta doesn't believe it enough.\nThis is the problem Varun is working on. 💗",
   ],
   chaos: [
-    "CHAOS MODE ACTIVATED:\nAnything is possible.\nSweta is leading the charge.",
-    "Chaotic good:\nSweta, eating ice cream at midnight, not caring, thriving — and Varun watching adoringly.",
-    "Fun chaos idea:\nText Varun something sweet today.\nWatch him become 300% happier.",
-    "Today's mission:\nDo one thing that makes you laugh. Anything counts.",
-    "Chaotic affirmation:\nYou are wonderful in the best way.\nFree. Real. Sweta.",
-    "Breaking: Sweta has decided to have a good day.\nThe universe has no choice but to comply.\nNeither does Varun.",
-    "Plot Twist:\nThe chaotic thing you're considering? Do it.\n(The ice cream one, obviously.)",
-    "Chaos tip:\nPlay your favourite song at full volume.\nImmediately 200% better.",
-    "Emergency Chaos Protocol:\nLaugh at something tiny.\nText Varun a meme.\nCarry on.",
-    "Did you know?\nBeing a little chaotic and a lot wonderful is Sweta's entire brand. Varun loves it.",
-    "Chaotic Sweta energy:\nShe showed up. She was herself. Everyone was better for it — especially Varun.",
+    "CHAOS MODE: ON 🎭\nIce cream at midnight.\nBTS playing loud.\nSweta thriving.\nAs it should be.",
+    "Chaotic good energy:\nEat what you want.\nRest when you need.\nExist loudly. 🌈",
+    "Today's chaos plan:\nDo one thing that makes you laugh.\nAnything counts. Even silly things. 😂",
+    "Plot twist:\nThat chaotic thing you're thinking?\nDo it.\nThe ice cream one especially. 🍦😂",
+    "Chaos tip:\nPlay your fav song full volume.\nDance a little.\nInstantly 200% better. 🎵",
+    "BTS + biryani + ice cream on a random night\n= Sweta's perfect chaos.\nVarun approves. 💜🍛🍦",
+    "Breaking:\nSweta decided to have a good day.\nUniverse: okay fine, arranging now. ✅",
+    "Emergency chaos protocol:\n1. Laugh at something silly\n2. Eat something nice\n3. Continue being amazing 💗",
+    "Sweta energy:\nShe showed up.\nShe was herself.\nEveryone's day got better. That's it. 💗",
+    "Chaotic affirmation:\nNuvvu wonderful.\nFree. Real. Loud. Sweta. 🌈💗",
   ],
   laugh: [
-    "Ha.\nHa ha.\nHa ha ha.\nOkay you're laughing now. Varun heard it from here.",
-    "This is your sign to think about something funny from last year and laugh again.",
-    "Remember that one time something ridiculous happened?\nYep. Still funny.",
-    "The giggle is incoming.\n3... 2... 1... there it is.\nVarun can picture it perfectly.",
-    "Fun exercise:\nTry to keep a straight face while saying 'banana' five times fast.",
-    "Plot Twist:\nYou already look incredibly cute when you laugh.\nSo you might as well laugh more.",
-    "Science has confirmed:\nSweta's laugh makes everything better.\nPlease deploy it liberally.",
-    "Breaking: Sweta laughed.\nVarun forgot what he was doing and just smiled for five minutes.",
-    "This is your official laugh prescription for today.\nDoctor Varun's orders. No skipping.",
-    "If your laugh were a song, it would be Varun's most-played song.\nFact.",
+    "Ha.\nHa ha.\nHa ha ha.\nNee laugh ippudu sound avutundi.\nVarun heard it somehow. 😂💗",
+    "Think of that one funny thing from last year.\nStill funny right? Right? 😂",
+    "Nee laugh cheste\nVarun forgets everything he was doing.\nEvery. Single. Time. 💗",
+    "Giggle incoming:\n3... 2... 1...\nThere it is. 😄",
+    "Fun exercise:\n'Banana' ani 5 times fast cheppu.\nSerious face tho try chey.\nImpossible. 😂",
+    "Nee cute ga laugh chestav.\nSo you might as well laugh more.\nLogic is perfect. 💗",
+    "Science confirm chesindi:\nSweta's laugh fixes bad moods instantly.\nPlease use this power more. 😄💕",
+    "Official laugh prescription:\nToday — one full laugh minimum.\nDoctor Varun's orders. 💊😂",
+    "Sweta laughed.\nVarun smiled for the next 20 minutes.\nUnrelated? No. 💗",
+    "Nee laugh world ki best sound.\nSong kanna better.\nVarun's playlist lo top lo undi. 🎵💗",
   ]
 };
 
 // =============================================
-// DATA — Happy Jar Notes
+// DATA — Happy Jar Notes (simple + warm)
 // =============================================
 const happyNotes = [
-  "Someone is smiling because of you. Right now. His name is Varun.",
-  "Drink water. You are mostly water. Be kind to yourself.",
-  "Take a deep breath. In. Hold. Out. Better.",
-  "You are doing better than you think.",
-  "Today is proud of you.",
-  "Rest is not laziness. It's self-respect.",
-  "You have survived 100% of your hard days.",
-  "Something wonderful is on its way to you.",
-  "You are exactly where you need to be.",
-  "One good thing: you opened this jar — and Varun made it for you.",
-  "You deserve softness today.",
-  "Your vibe is magnetic today. It always is.",
-  "Check in with yourself: are you okay? If not, Varun wants to know.",
-  "You made someone feel loved this week. You don't know it, but you did.",
-  "Progress doesn't have to be dramatic to be real.",
-  "You are more than what you produce.",
-  "Take a break if you need one. The work will wait.",
-  "The flowers are growing because you water them. You do the same.",
-  "Someone out there thinks you're wonderful. That someone is Varun.",
-  "You don't have to have it all figured out today.",
-  "Your feelings are valid. All of them.",
-  "You've been kind today, even when it was hard.",
-  "Give yourself the same grace you give to others.",
-  "Your story isn't over. This is still the beautiful middle part.",
-  "You are the main character. Act like it. Varun agrees.",
-  "Stretch. Your body deserves five minutes.",
-  "You've outgrown things you used to think you couldn't live without. Growth.",
-  "The sky is doing something beautiful right now. Look up.",
-  "Eat something that makes you happy today. Varun will join you.",
-  "You are a good person. Not perfect — good. That's better.",
-  "You helped someone without realising it this week.",
-  "Today you are allowed to just be.",
-  "Put on your favourite song. Right now.",
-  "You are not a burden. You are a gift. Varun's favourite gift.",
-  "Small joys are still joys.",
-  "You are building something, even when it doesn't feel like it.",
-  "You are loved — not for what you do, just for being you.",
-  "It's okay to start over. It's okay to start small.",
-  "The version of you reading this deserves kindness.",
-  "You made it to another day. That counts. Varun is glad you're here.",
-  "You are resilient. Not because you don't feel things — because you do.",
-  "You belong in the rooms you walk into.",
-  "Something today will surprise you in a good way.",
-  "Breathe. You're still here. That's enough.",
-  "You've made peace with things that would have broken you before. See that.",
-  "You are someone's safe person. Varun's, especially.",
-  "Drink your water. Eat your snack. You're doing great.",
-  "Today: be gentle with yourself first.",
-  "Your presence alone changes the energy of a room.",
-  "Wherever you are, you belong there.",
-  "You are worthy of rest without earning it.",
-  "Not every day will be good — but there is good in every day.",
-  "You're growing in ways you can't see yet.",
-  "One step at a time is still moving forward.",
-  "You are not your productivity.",
-  "Someone thought of you warmly today. Varun thinks of you constantly.",
-  "You have handled harder things than this. Remember that.",
-  "Your heart is good. Keep it that way.",
-  "The universe is quietly rooting for you. So is Varun. Loudly.",
-  "You matter beyond what you can measure.",
-  "Rest your eyes. You've been looking at screens too long.",
-  "You are enough, right now, exactly as you are.",
-  "Celebrate the small wins. They add up.",
-  "Take the long route home sometimes. Notice things.",
-  "You didn't give up when it was hard. Quietly proud of you.",
-  "You are allowed to be happy, Sweta.",
-  "Ask for help if you need it. That's strength. Varun is always here.",
-  "Your bad days don't cancel your good ones.",
-  "Something that worries you now will seem smaller soon.",
-  "You are exactly who someone needed today.",
-  "Put your phone down for five minutes. Unless you're texting Varun. That's allowed.",
-  "You've been working hard. You deserve a moment.",
-  "The kindness you give comes back to you.",
-  "You are more capable than your worst anxiety tells you.",
-  "You have arrived at today. That's the whole job.",
-  "You are a living, breathing good thing.",
-  "Today: notice one beautiful thing you'd normally walk past.",
-  "Your softness is not weakness. It is a form of courage.",
-  "Someone's favourite memory involves you. Varun has many of them.",
-  "You have changed for the better.",
-  "Be patient with yourself. You're learning.",
-  "You are not running out of time. You are on your timeline.",
-  "The hard moment will pass. It always does.",
-  "You are rare, Sweta. Actually rare.",
-  "You show up for people. That matters enormously.",
-  "Notice how far you've already come.",
-  "Today you don't have to be extraordinary. Just you — that's already extraordinary.",
-  "You are cared about. More than you know.",
-  "All your feelings make sense. Let them through.",
-  "Even on the heavy days — you are still luminous.",
-  "You are worthy of love and belonging. Always.",
-  "Today holds something good for you. Keep your eyes open.",
-  "You are part of why the world is a gentler place.",
-  "Something beautiful will come from this season of your life.",
-  "You are held, even when it doesn't feel like it. Varun's got you.",
-  "You are treasured. You are loved. You are Sweta.",
-  "You are the sunshine Varun has been waiting for.",
-  "Come back here whenever you need to. This jar is always full — just like Varun's heart."
+  "Oka person ippudu nee guralinchi smile chestunnadu.\nAa person — Varun. 💗",
+  "Neellu taagu.\nRest chey.\nNuvvu okay avutaav. 🌸",
+  "Deep breath teesuko.\nIn... hold... out...\nBetter ga undi kada. ✨",
+  "Nuvvu anukuntunnav kanna better ga chestunnav.\nTeliyada? 💗",
+  "Today is proud of you Sweta. Really. 🌸",
+  "Rest cheyadam lazy kadu.\nIthi self love. 💕",
+  "Nee hard days anni survive chesav.\n100% record. Ithi small kadu. 💗",
+  "Oka good thing nee way lo vasthundi.\nWait chey. ✨",
+  "Nuvvu exactly right place lo unnav.\nRight time lo. 🌸",
+  "Ee jar open chesav.\nAdi chala good step. Varun made it for you. 💗",
+  "Today: nee ki soft ga undali.\nRules of universe. 🌸",
+  "Nee vibe today — magnetic.\nElla rojoo. 💕",
+  "Neeku okay ga lekapothe okay cheppu.\nIthi okay. 💗",
+  "Ee week lo oka person ki good feel chesav.\nNuvvu teliyadhu kani chesav. ✨",
+  "Progress dramatic ga undakpoyina\nstill progress. Forget cheyaku. 💗",
+  "Nuvvu produce cheyyadam kanna ekkuva.\nNuvvu person. 🌸",
+  "Break teesuko.\nWork wait chestundi.\nNuvvu important. 💕",
+  "Oka person nee guralinchi warmly think chestunnadu.\nVarun — constantly. 💗",
+  "Ikkade anni figure out cheyyakkarledu.\nTime undi. ✨",
+  "Nee feelings anni valid.\nAnni. No exceptions. 🌸",
+  "Today kuda kind ga unnav.\nHard ayina kuda.\nNoticed. 💗",
+  "Others ki ivvadam laanti grace\nnee ki kuda ivvu. 💕",
+  "Nee story inka aipoledu.\nEe beautiful middle part lo unnav. ✨",
+  "Main character nuvve.\nVarun front row lo unnadu. 💗",
+  "Nee fav song pettuko.\nRight now.\nSeriousga. 🎵",
+  "Nuvvu burden kavu.\nNuvvu gift. Varun ki especially. 💗",
+  "Small joys kuda joys.\nForget cheyaku. 🌸",
+  "Nuvvu oka thing build chestunnav\nkanipiyanappudu kuda. 💕",
+  "Nuvvu loved — cheyyadam valla kadu\nOkkatē nuvvu avvadam valla. 💗",
+  "Start over cheyadam okay.\nSmall ga start cheyadam okay.\nBothways okay. ✨",
+  "Ee moment lo nuvvu\nkindness deserve chestunnav. 🌸",
+  "Oka more day ki vachinav.\nIthi count avutundi. Varun glad unnadu. 💗",
+  "Feel avutav kaabatti resilient.\nFeel avvadam weakness kadu. 💕",
+  "Nuvvu enter ayye rooms lo\nnuvvu belong avutav.\nAlways. ✨",
+  "Oka good surprise waiting for you today.\nEyes open ga undo. 🌸",
+  "Breathe.\nNuvvu ikkade unnav.\nIthi enough. 💗",
+  "Hard things tho peace chesav\naaf earlier you break avvedi.\nAdi growth. ✨",
+  "Varun ki nuvvu safe person.\nAlways. 💗",
+  "Neellu taagu, snack tini.\nYou're doing great. 🌸",
+  "Today: first nee ki gentle ga undo. 💕",
+  "Nuvvu room ki vachinappudu\nroom feel avutundi — she's here. 💗",
+  "Nuvvu rest deserve chestunnav.\nEarn cheyyadam ledu — deserve chesav. ✨",
+  "Every day good kadu.\nKani every day lo good undi.\nChudaali. 🌸",
+  "Nuvvu grow avutunnav\nkanipiyanappudu kuda. 💗",
+  "Oka step at a time.\nStill moving forward. 💕",
+  "Nuvvu nee productivity kadu.\nNuvvu person. 🌸",
+  "Oka person nee gurinchi warmly think chestunnadu.\nVarun — always. 💗",
+  "Neeku hard days handle chesav before.\nEe day kuda handle avutav. ✨",
+  "Nee heart good.\nProtect it. 💗",
+  "Universe nee kosam quietly root chestundi.\nVarun — loudly. 💕",
+  "Nuvvu matter avutav\nnuvvu measure cheyyadam kanna ekkuva. 🌸",
+  "Eyes rest chey.\nScreens chala ayyindhi. 💗",
+  "Right now exactly enough.\nAlways has been. ✨",
+  "Small wins celebrate chey.\nThey add up. 💕",
+  "Nuvvu hard thing lo give up cheyyledu.\nQuietly proud of you. 💗",
+  "Sweta nuvvu happy avvadam allowed.\nAlways allowed. 🌸",
+  "Help adigite weakness kadu.\nStrength. 💗",
+  "Nee bad days nee good days ni cancel cheyavu.\nNuvvu still wonderful. ✨",
+  "Something that worries you now\nwill feel smaller soon.\nPinky promise. 💕",
+  "Nuvvu exactly who oka person ki needed today.\nThat person — Varun. 💗",
+  "Phone ki break ivvu.\nNuvvu deserve it. 🌸",
+  "Nuvvu hard ga work chesav.\nEe moment deserve chestunnav. 💗",
+  "Nee kindness nee daggare return avutundi.\nAlways. 💕",
+  "Nuvvu arrive chesav today.\nThat's the whole job. ✨",
+  "Nuvvu living, breathing good thing. 💗",
+  "Today: oka beautiful thing notice chey\nnormally walk past ayye thing. 🌸",
+  "Nee softness weakness kadu.\nIthi courage. 💗",
+  "Nee fav memory lo oka person unnadu.\nVarun ki chala unnay. 💕",
+  "Nuvvu change for better chesav.\nSee that. ✨",
+  "Patient ga undo nee tho.\nNuvvu learn avutunnav. 🌸",
+  "Time out avvadam ledu nee ki.\nNee time lo unnav. 💗",
+  "Hard moment passes.\nAlways does. 💕",
+  "Nuvvu rare Sweta.\nActually rare. ✨",
+  "People kosam show up chestav.\nAdi chala matter avutundi. 💗",
+  "Nuvvu ela doors vachinav adi chudo.\nFar ga vachinav. 🌸",
+  "Today extraordinary avvadam ledu.\nJust Sweta avvadam enough.\nAlready extraordinary that. 💗",
+  "Nee feelings anni make sense.\nLet them through. 💕",
+  "Hard days lo kuda nuvvu luminous.\nAlways. ✨",
+  "Nuvvu loved and worthy.\nAlways. 💗",
+  "Today lo oka good thing nee kosam wait chestundi.\nChuso. 🌸",
+  "Beautiful things come from this time.\nWait and see. 💕",
+  "Nuvvu treasured. Nuvvu loved. Nuvvu Sweta. 💗",
+  "Nuvvu Varun ki wait chesina sunshine.\n(He won't say it but it's true.) ☀️💗",
+  "Ee jar always full.\nVarun's heart also. Come back anytime. 💗"
 ];
 
 // =============================================
-// DATA — Daily Quotes (flirty & romantic)
+// DATA — Daily Quotes (simple + Telugu mix)
 // =============================================
 const dailyQuotes = [
-  "She remembered who she was and the game changed.",
-  "In a world full of people, I'd still choose you every time.",
-  "She is both hellfire and holy water — and I'm completely gone for her.",
-  "You are the universe experiencing itself — and I'm the luckiest part of it.",
-  "Do it with passion or not at all.",
-  "She turned her can'ts into cans and her dreams into plans. I was watching the whole time.",
-  "She was chaos and beauty intertwined — and I love every part.",
-  "I didn't know what I was looking for until I found you.",
-  "Make it happen. Shock everyone — you already shocked me.",
-  "You attract what you are. You attracted someone hopelessly in love with you.",
-  "Beautiful things don't ask for attention — but I can't look away.",
-  "She believed she could, so she did. And I believed in her before she did.",
-  "You are the magic you're looking for.",
-  "Life is tough, my darling — but so are you. And I'll be right here.",
-  "Stay close to anything that makes you glad you're alive. I hope that includes me.",
-  "Bloom where you are planted — you've bloomed into something extraordinary.",
-  "She remembered her worth and everything shifted.",
-  "I could search my whole life and never find someone like you.",
-  "You are my favourite distraction, my best decision.",
-  "She was never looking for a hero — she was busy being one."
+"Moon earth ni follow chestundi. Nenu matram nee smile ni follow chestunna. 🌙💗",
+"Nee peru notification lo kanipiste ordinary day kuda special aipothundi. ✨",
+"Life lo random ga vachina best thing? Ninnu kalavadam probably. 💗",
+
+  "Nee worth remember chesukunnappudu\neverything shifts. 💗",
+  "World lo chala people unnaru.\nKani nee laanti Sweta okkatē. ✨",
+  "She was soft and strong at the same time.\nThat's the rarest thing. 🌸",
+  "Nuvvu magic ni search cheyyadam ledu.\nNuvvu magic ve. 💗",
+  "Life tough ga undi Sweta.\nKani nuvvu tougher. 💕",
+  "Nuvvu exist avvadam valla\nworld better ayindi. ✨",
+  "She believed she could.\nSo she did.\nSimple as that. 💗",
+  "Beautiful things don't ask for attention.\nThey just are. 🌸",
+  "Nuvvu nee timeline lo unnav.\nIthi perfect. 💗",
+  "Nee kindness nuvvu anukunnav kanna\nekkuva reach avutundi. ✨",
+  "She was never waiting to be saved.\nShe was busy saving herself. 💗",
+  "Nuvvu nee fav song laanti.\nVaruni ekkuva. 🎵",
+  "Bloom where you are.\nNuvvu already blooming. 🌸",
+  "Nee growth kanipiyanappudu kuda real. 💗",
+  "Stay close to things that make you glad you're alive.\nIce cream. BTS. Good people. 💜🍦",
+  "Nuvvu room lo ki vachinappudu\nroom's mood changes.\nThat's you. 💗",
+  "She remembered her worth.\nEverything changed. ✨",
+  "Nuvvu someone ki favourite reason to smile.\nEe 'someone' — Varun. 💗",
+  "Chand earth ni follow chesadu life lo.\nKani earth nuvvu Sweta ni choose chesindi. 🌙",
+  "Nee story abhi bhi chal rahi hai.\nBest parts abhi aane baaqi hain. 💗"
 ];
+
+// =============================================
+// PRIORITIES PAGE — Varun climbing logic
+// =============================================
+let climbProgress = 4;
+const climbMessages = [
+"Varun biryani ni challenge chesadu. Biryani laughed. 🍛😭",
+"Ice cream ki telusu. Varun vastunnadu ani anduke nervous ga melt aipothundi. 🍦",
+"One day Varun #1 avthadu. Today is not that day. 😭",
+
+  "Currently stuck behind biryani. Plotting seriously. 🍛",
+  "Brought ice cream to impress. Still #4. Worth it. 🍦",
+  "BTS background lo play chesadu. Almost worked. 💜",
+  "Biryani said 'no'. Varun remains determined. 😤",
+  "Filed official complaint. Ice cream rejected it. 🍦📋",
+  "Progress ho raha hai! Biryani nervous ga undi. 👀",
+  "Varun casually mentioned he knows where best biryani is...",
+  "Sweta nee tో share chesadu biryani. Varun counted +10 points. 🍛💗",
+  "Getting closer... or so Varun thinks. 😄",
+  "Ice cream is nervous. First time in history. 🍦😰",
+  "Varun arrived with biryani AND ice cream. Bold move. 🍛🍦",
+  "BTS surprisingly supportive. Varun thanks them. 💜",
+  "Almost at #3! This might actually be the year! 🎉",
+  "Varun: 'Nenu anni tho fight chestanu.' Ice cream: 'lol okay.' 🍦",
+  "So close to #2! Ice cream is shaking! 🍦😰",
+  "TIED WITH ICE CREAM. History being made today! 🏆",
+  "Fighting biryani 1v1. Very intense. 🍛⚔️",
+  "Almost #1! Universe is watching! 👀💗",
+  "ICE CREAM LET HIM WIN. JUST THIS ONCE. VARUN IS #1! 🏆💗🎉",
+];
+
+function varunClimbs() {
+  climbProgress = Math.min(climbProgress + Math.floor(Math.random() * 8) + 3, 100);
+  const bar = document.getElementById('climb-bar');
+  const pct = document.getElementById('climb-percent');
+  const tip = document.getElementById('climb-tip');
+  if (bar) bar.style.width = climbProgress + '%';
+  if (pct) pct.textContent = climbProgress + '%';
+  const msgIdx = Math.min(Math.floor(climbProgress / 5.5), climbMessages.length - 1);
+  if (tip) tip.textContent = climbMessages[msgIdx];
+
+  const rankBadge = document.querySelector('.rank-4-badge');
+  if (rankBadge) {
+    if (climbProgress >= 100) rankBadge.textContent = '🏆 #1!';
+    else if (climbProgress >= 75) rankBadge.textContent = '🔥 #2';
+    else if (climbProgress >= 50) rankBadge.textContent = '⬆️ #3';
+    else rankBadge.textContent = '#4';
+  }
+
+  spawnHeartBurst(6);
+}
 
 // =============================================
 // UTILITY FUNCTIONS
@@ -395,17 +354,14 @@ function showPage(name) {
     target.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
-  // Close mobile nav
   document.getElementById('nav-links').classList.remove('open');
 
-  // Page-specific init
   if (name === 'final') initFinalHearts();
   if (name === 'beauty') initMoonParticles();
   if (name === 'certificate') initCertParticles();
+  if (name === 'priorities') initPriorities();
 }
 
-// Mobile nav toggle
 document.getElementById('nav-toggle').addEventListener('click', () => {
   document.getElementById('nav-links').classList.toggle('open');
 });
@@ -429,16 +385,16 @@ function surpriseMe() {
 
 function moodBooster() {
   const boosts = [
-    "🌈 Your mood just levelled up. Varun's too.",
-    "🎵 Play your favourite song right now. Do it.",
-    "🌸 Look up from the screen. Notice something beautiful.",
-    "☀️ The sun is technically out there for you.",
-    "💃 Give yourself a 10-second dance break. You earned it.",
-    "🍦 Ice cream. Varun's buying.",
-    "🫂 You deserve a hug. Varun has one ready.",
-    "✨ Close your eyes, breathe deep. Open them — you're still amazing.",
-    "🌺 One good thing: you exist. That alone is enough. Especially for Varun.",
-    "🎉 Celebrate yourself. Right now. For no reason. Varun does it constantly.",
+    "🌈 Nee mood ippudu level up aindi!",
+    "🎵 Nee fav song ippude pettuko. Do it now.",
+    "🌸 Screen nundi chuso. Oka beautiful thing notice chey.",
+    "☀️ Sun technically nee kosam undi out there.",
+    "💃 10 second dance break. You earned it.",
+    "🍦 Ice cream. Nuvvu deserve chestunnav. Go.",
+    "🫂 Nuvvu oka good hug deserve chestunnav today.",
+    "✨ Eyes close chey, deep breath, open — still amazing. Yes.",
+    "🌺 Oka good thing: nuvvu exist avutunnav. Enough that.",
+    "🎉 Right now nee ni celebrate chey. No reason needed.",
   ];
   const el = document.getElementById('surprise-msg');
   showMsg(el, rand(boosts));
@@ -452,7 +408,7 @@ function getCompliment() {
   const c = rand(compliments);
   el.style.opacity = 0;
   setTimeout(() => {
-    el.innerHTML = c;
+    el.innerHTML = c.replace(/\n/g, '<br>');
     el.style.opacity = 1;
   }, 300);
   spawnHeartBurst();
@@ -484,7 +440,7 @@ function launchConfetti() {
   const colours = ['#f9a8d4','#ff80b5','#ffb6c1','#ff69b4','#ffd700','#ff6fa8','#c4b5fd','#fff'];
   const shapes = ['circle', 'rect', 'heart'];
 
-  for (let i = 0; i < 220; i++) {
+  for (let i = 0; i < 150; i++) {
     pieces.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height - canvas.height,
@@ -504,19 +460,15 @@ function launchConfetti() {
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     pieces.forEach(p => {
-      p.x += p.vx;
-      p.y += p.vy;
-      p.rot += p.rotV;
-      if (frame > 120) p.alpha -= 0.012;
+      p.x += p.vx; p.y += p.vy; p.rot += p.rotV;
+      if (frame > 80) p.alpha -= 0.018;
       ctx.save();
       ctx.globalAlpha = Math.max(p.alpha, 0);
       ctx.translate(p.x, p.y);
       ctx.rotate(p.rot);
       ctx.fillStyle = p.colour;
       if (p.shape === 'circle') {
-        ctx.beginPath();
-        ctx.arc(0, 0, p.w / 2, 0, Math.PI * 2);
-        ctx.fill();
+        ctx.beginPath(); ctx.arc(0, 0, p.w / 2, 0, Math.PI * 2); ctx.fill();
       } else if (p.shape === 'rect') {
         ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
       } else {
@@ -526,8 +478,8 @@ function launchConfetti() {
       ctx.restore();
     });
     frame++;
-    if (frame < 200) requestAnimationFrame(draw);
-    else { ctx.clearRect(0, 0, canvas.width, canvas.height); }
+    if (frame < 160) requestAnimationFrame(draw);
+    else ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
   draw();
 }
@@ -537,50 +489,46 @@ function initCertParticles() {
   if (!container) return;
   container.innerHTML = '';
   const symbols = ['💗', '✦', '✧', '⋆', '★', '✨', '💕'];
-  for (let i = 0; i < 24; i++) {
+  for (let i = 0; i < 18; i++) {
     const p = document.createElement('div');
     p.className = 'floater';
     p.textContent = rand(symbols);
-    p.style.cssText = `
-      left:${Math.random()*100}%;
-      top:${Math.random()*100}%;
-      font-size:${Math.random()*0.8+0.6}rem;
-      color:rgba(255,128,181,${Math.random()*0.5+0.3});
-      animation-duration:${Math.random()*5+4}s;
-      animation-delay:${Math.random()*4}s;
-      position:absolute;
-    `;
+    p.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;font-size:${Math.random()*0.8+0.6}rem;color:rgba(255,128,181,${Math.random()*0.5+0.3});animation-duration:${Math.random()*5+4}s;animation-delay:${Math.random()*4}s;position:absolute;`;
     container.appendChild(p);
   }
 }
 
 // =============================================
-// PAGE 9 — SECRET
+// PAGE 9 — PRIORITIES INIT
+// =============================================
+function initPriorities() {
+  const bar = document.getElementById('climb-bar');
+  const pct = document.getElementById('climb-percent');
+  if (bar) bar.style.width = climbProgress + '%';
+  if (pct) pct.textContent = climbProgress + '%';
+}
+
+// =============================================
+// PAGE 10 — SECRET
 // =============================================
 function triggerSecret() {
   launchConfetti();
-
   const btn = document.getElementById('secret-btn');
   btn.disabled = true;
   btn.textContent = '💗 UNLOCKED! 💗';
   btn.style.background = 'linear-gradient(135deg,#ff80b5,#ff69b4)';
-
   document.body.classList.add('shake');
   setTimeout(() => document.body.classList.remove('shake'), 700);
-
-  spawnHeartBurst(40);
-
+  spawnHeartBurst(30);
   const result = document.getElementById('secret-result');
   const achieves = [
-    '💗 Has Varun Completely Whipped',
-    '✨ Certified Girlfriend of the Year',
+    '💗 Varun ki completely in awe chesindi',
+    '✨ Certified Wonderful Person of the Year',
     '👑 Queen Status: Confirmed',
-    '🍦 Ice Cream Certified',
-    '💫 Walking Serotonin Boost'
+    '🍦 Ice Cream Certified (obviously)',
+    '💫 Walking Serotonin Boost — Worldwide'
   ];
-
-  result.innerHTML = '<div style="font-size:2rem;font-family:\'Dancing Script\',cursive;color:#ff80b5;text-shadow:0 0 20px rgba(255,128,181,.8)">SWETA PREMIUM EDITION UNLOCKED 💗</div>';
-
+  result.innerHTML = '<div style="font-size:1.8rem;font-family:\'Dancing Script\',cursive;color:#ff80b5;text-shadow:0 0 20px rgba(255,128,181,.8)">SWETA PREMIUM EDITION UNLOCKED 💗</div>';
   const achDiv = document.createElement('div');
   achDiv.className = 'achievements';
   achieves.forEach((a, i) => {
@@ -596,15 +544,13 @@ function triggerSecret() {
 }
 
 // =============================================
-// PAGE 10 — HAPPY JAR
+// PAGE 11 — HAPPY JAR
 // =============================================
 function openJar() {
   const lid = document.getElementById('jar-lid');
   const note = document.getElementById('jar-note');
-
   lid.style.transform = 'translateY(-20px) rotate(30deg)';
   lid.style.transition = 'all .4s ease';
-
   setTimeout(() => {
     note.classList.remove('visible');
     setTimeout(() => {
@@ -613,7 +559,6 @@ function openJar() {
     }, 300);
     lid.style.transform = '';
   }, 600);
-
   spawnHeartBurst(8);
 }
 
@@ -624,17 +569,12 @@ function initFinalHearts() {
   const container = document.getElementById('final-hearts');
   if (!container) return;
   container.innerHTML = '';
-  const hearts = ['❤️','💗','💕','💖','💝','💓','💞','🌸','✨','💫'];
-  for (let i = 0; i < 35; i++) {
+  const hearts = ['❤️','💗','💕','💖','💝','💓','💞','🌸','✨','💫','🌹','🥀'];
+  for (let i = 0; i < 25; i++) {
     const h = document.createElement('div');
     h.className = 'final-heart';
     h.textContent = rand(hearts);
-    h.style.cssText = `
-      left:${Math.random()*100}%;
-      font-size:${Math.random()*1.5+0.8}rem;
-      animation-duration:${Math.random()*8+6}s;
-      animation-delay:${Math.random()*8}s;
-    `;
+    h.style.cssText = `left:${Math.random()*100}%;font-size:${Math.random()*1.5+0.8}rem;animation-duration:${Math.random()*8+6}s;animation-delay:${Math.random()*8}s;`;
     container.appendChild(h);
   }
 }
@@ -647,78 +587,73 @@ function initMoonParticles() {
   if (!container) return;
   container.innerHTML = '';
   const symbols = ['🌙','⭐','✨','💫','🌟','💗','·','✦'];
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 20; i++) {
     const p = document.createElement('div');
     p.className = 'moon-particle';
     p.textContent = rand(symbols);
-    p.style.cssText = `
-      left:${Math.random()*100}%;
-      font-size:${Math.random()*1.2+0.6}rem;
-      animation-duration:${Math.random()*10+8}s;
-      animation-delay:${Math.random()*10}s;
-    `;
+    p.style.cssText = `left:${Math.random()*100}%;font-size:${Math.random()*1.2+0.6}rem;animation-duration:${Math.random()*10+8}s;animation-delay:${Math.random()*10}s;`;
     container.appendChild(p);
   }
 }
 
 // =============================================
-// BACKGROUND FLOATING ELEMENTS (pink theme)
+// BACKGROUND — mobile optimised
 // =============================================
 function initBgElements() {
   const container = document.getElementById('bg-elements');
-  const elements = [
-    { symbol: '💗', count: 18, cls: '' },
-    { symbol: '✨', count: 18, cls: '' },
-    { symbol: '🌸', count: 15, cls: '' },
-    { symbol: '💕', count: 12, cls: '' },
-    { symbol: '⭐', count: 10, cls: '' },
-    { symbol: '💫', count: 8, cls: '' },
-    { symbol: '🌹', count: 8, cls: '' },
-    { symbol: '💖', count: 10, cls: '' },
+  const isMobile = window.innerWidth < 768;
+  const elements = isMobile ? [
+    { symbol: '💗', count: 8 },
+    { symbol: '🌹', count: 6 },
+    { symbol: '❤️', count: 5 },
+    { symbol: '🌸', count: 5 },
+    { symbol: '💕', count: 4 },
+    { symbol: '🥀', count: 3 },
+    { symbol: '💖', count: 3 },
+    { symbol: '✨', count: 3 },
+  ] : [
+    { symbol: '💗', count: 16 },
+    { symbol: '🌹', count: 12 },
+    { symbol: '❤️', count: 12 },
+    { symbol: '🌸', count: 10 },
+    { symbol: '💕', count: 8 },
+    { symbol: '🥀', count: 6 },
+    { symbol: '💖', count: 8 },
+    { symbol: '💝', count: 6 },
+    { symbol: '✨', count: 8 },
+    { symbol: '💫', count: 5 },
   ];
-
-  elements.forEach(({ symbol, count, cls }) => {
+  elements.forEach(({ symbol, count }) => {
     for (let i = 0; i < count; i++) {
       const el = document.createElement('div');
-      el.className = `floater ${cls}`;
+      el.className = 'floater';
       el.textContent = symbol;
-      el.style.cssText = `
-        left: ${Math.random() * 100}%;
-        font-size: ${Math.random() * 1.2 + 0.8}rem;
-        animation-duration: ${Math.random() * 12 + 10}s;
-        animation-delay: ${Math.random() * 15}s;
-      `;
+      el.style.cssText = `left:${Math.random()*100}%;font-size:${Math.random()*1.0+0.7}rem;animation-duration:${Math.random()*18+14}s;animation-delay:${Math.random()*20}s;will-change:transform,opacity;`;
       container.appendChild(el);
     }
   });
 }
 
 // =============================================
-// HEART BURST EFFECT
+// HEART BURST
 // =============================================
-function spawnHeartBurst(count = 20) {
-  const hearts = ['❤️','💗','💕','💖','💝','✨','💫','🌸','💓'];
-  for (let i = 0; i < count; i++) {
+function spawnHeartBurst(count = 12) {
+  const isMobile = window.innerWidth < 768;
+  const actualCount = isMobile ? Math.min(count, 8) : count;
+  const hearts = ['❤️','💗','💕','💖','💝','✨','💫','🌸','💓','🌹'];
+  for (let i = 0; i < actualCount; i++) {
     const h = document.createElement('div');
     h.textContent = rand(hearts);
     const x = 20 + Math.random() * 60;
     const y = 20 + Math.random() * 60;
-    h.style.cssText = `
-      position:fixed;
-      left:${x}vw;
-      top:${y}vh;
-      font-size:${Math.random()*1.5+1}rem;
-      pointer-events:none;
-      z-index:5000;
-      animation: heartBurstAnim ${Math.random()*1.5+1}s ease forwards;
-    `;
+    h.style.cssText = `position:fixed;left:${x}vw;top:${y}vh;font-size:${Math.random()*1.5+1}rem;pointer-events:none;z-index:5000;animation:heartBurstAnim ${Math.random()*1.5+1}s ease forwards;`;
     document.body.appendChild(h);
     setTimeout(() => h.remove(), 2500);
   }
 }
 
 // =============================================
-// SLIDESHOW — PAGE 1 (4 images)
+// SLIDESHOW
 // =============================================
 function initSlideshow() {
   const slides = document.querySelectorAll('.slide');
@@ -732,28 +667,25 @@ function initSlideshow() {
 }
 
 // =============================================
-// DAILY BITS (seeded by date)
+// DAILY BITS
 // =============================================
 function initDailyBits() {
   const today = new Date().toDateString();
   let seed = 0;
   for (const ch of today) seed += ch.charCodeAt(0);
-
   const ci = seed % compliments.length;
   const ji = (seed * 3) % jokes.joke.length;
   const qi = (seed * 7) % dailyQuotes.length;
-
   const dcEl = document.getElementById('daily-compliment');
   const djEl = document.getElementById('daily-joke');
   const dqEl = document.getElementById('daily-quote');
-
-  if (dcEl) dcEl.textContent = compliments[ci];
+  if (dcEl) dcEl.textContent = compliments[ci].replace(/\n/g, ' ');
   if (djEl) djEl.textContent = jokes.joke[ji].replace(/\n/g, ' ');
-  if (dqEl) dqEl.textContent = dailyQuotes[qi];
+  if (dqEl) dqEl.textContent = dailyQuotes[qi].replace(/\n/g, ' ');
 }
 
 // =============================================
-// INJECT HEART BURST KEYFRAME
+// KEYFRAMES
 // =============================================
 function injectKeyframes() {
   const style = document.createElement('style');
@@ -761,7 +693,7 @@ function injectKeyframes() {
     @keyframes heartBurstAnim {
       0%   { transform: translate(0,0) scale(0.5); opacity: 1; }
       50%  { opacity: 1; }
-      100% { transform: translate(${Math.random()>0.5?'':'-'}${Math.random()*100+50}px, -${Math.random()*120+60}px) scale(1.4); opacity: 0; }
+      100% { transform: translate(${Math.random()>0.5?'':'-'}${Math.random()*80+40}px, -${Math.random()*100+50}px) scale(1.4); opacity: 0; }
     }
   `;
   document.head.appendChild(style);
